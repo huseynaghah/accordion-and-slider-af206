@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sliderContainer {
+    width: 100%;
+    position: relative;
+    min-height: 360px;
+}
+
+#leftBtn {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 45%;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#rightBtn {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 45%;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#pagination {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    /* background: red; */
+    width: 50px;
+    height: 10px;
+    z-index: 2;
+    bottom: -70px;
+    left: calc((100% - 50px)/2);
+}
+
+.pag{
+    background-color: white;
+    border: 0.5px solid orange;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#dot{
+    background-color: red;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+.slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    transition: 1s opacity;
+    /* height: 100%; */
+}
+
+.slide>* {
+    margin-bottom: 40px;
+}
+
+.slide-one {
+    background-image: url('https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D');
+    opacity: 1;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.slide-two {
+    background-image: url('https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    opacity: 0;
+}
+
+.slide-three {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlROcXWBsxzaZwXERUSfV6eD92_-KLFAvjbg&s');
+    background-size: cover;
+    background-position: 50% 50%;
+    opacity: 0;
+}

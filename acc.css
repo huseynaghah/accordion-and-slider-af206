@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.accordion{
+    width: 40%;
+    margin: 10px auto;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    overflow: hidden;
+   
+}
+i{
+    transition: 1s transform;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px;
+    cursor: pointer;
+
+}
+
+.content{
+    text-align: justify;
+    font-size: 18px;
+    color: #939393;
+    height: 0;
+    transition: 1s height;
+}
+
+.content p {
+    padding: 10px;
+}
+
+/* .open{
+    height: auto;
+
+} */
+
